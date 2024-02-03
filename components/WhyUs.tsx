@@ -24,7 +24,7 @@ const features = [
   }
 ]
 
-export default function Example() {
+export default function WhyUs() {
   return (
     <div className="overflow-hidden bg-[#0c0c0c] py-24 sm:py-32 rounded-xl" id='why-us'>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

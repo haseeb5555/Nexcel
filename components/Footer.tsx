@@ -22,14 +22,15 @@ export default function Footer() {
 const { setTransform }= useSetTransform()
 
   return (
-    <footer className="w-full flex   justify-between items-center px-20 py-12  max-md:justify-center max-sm:px-4">
+    <footer className="mt-20 relative w-full flex   justify-between items-center px-20 py-12  max-md:justify-center max-sm:px-4">
 
        <p className=" text-gray-500 max-md:hidden w-full ">© 2023, Nexcel.</p>
        <motion.div className="w-[100%] h-[1px] bg-pink-950 max-sm:hidden"></motion.div>
       <div className="w-full flex justify-center items-center">
 
-      
        
+      <motion.div className=" absolute w-28 h-28 border border-pink-950 rounded-full max-sm:h-40 max-sm:w-40"></motion.div>
+      <motion.div className=" absolute w-[1px] h-[313px] border border-pink-950 rounded-full"></motion.div>
       <div className="w-full flex  justify-center items-center px-4 py-3 rounded-full bg-transparent backdrop-blur-md border border-pink-950 gap-8">
         <AnimatePresence>
           {footerlinks.map((link) => {
@@ -58,9 +59,9 @@ const { setTransform }= useSetTransform()
                     style={{ x: textX, y: textY }}
                     src={link.src}
                     alt={link.name}
-                    width={24}
-                    height={24}
-                    className="dark:invert"
+                    width={34}
+                    height={34}
+                    className="dark:invert "
                 
                  />
                    
